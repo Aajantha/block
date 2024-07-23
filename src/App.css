@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav {
+  background-color: #003366;
   color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav input {
+  padding: 5px;
+}
+
+.posts-container {
+  padding: 20px;
+  width: 500px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 500px ;
+}
+
+.post h2 {
+  margin-top: 0;
+}
+
+.post img {
+  width: 100%;
+}
+
+.post p {
+  text-align: justify;
+}
+
+.post button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.post button:hover {
+  background-color: #e68a00;
 }
