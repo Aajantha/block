@@ -6,8 +6,8 @@ import './App.js';
 function App() {
   return (
     <div>
-      <Posts />
       <BlogNav />
+      <Posts />
     </div>
   );
 }
